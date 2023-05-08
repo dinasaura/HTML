@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <div class="info">
+        <label for="email"> Email</label>
+        <input type="email" id="email" name="email"/>
+        <label for="pass"> Password</label>
+        <input type="password" id="pass" name="password"/>
+        <label for="name"> Name and lastname</label>
+        <input type="text" id="name" name="name"/>
+        <br/><br/>
+        <label for="date"> Date of birth</label>
+        <input type="date" id="date" name="date"/>
+        <label for="tel"> Phone number</label>
+        <input type="tel" id="tel" name="phone number"/>
+      </div>
+      <br/>
+      <div class="plans">
+        <label for="plan"> Plans</label>
+        <select id="plan" name="plans">
+          <option value="0"> Free</option>
+          <optgroup label="Monthly plan">
+            <option value="200"> 10€/month</option>
+            <option value="300"> 15€/month</option>
+            <option value="560"> 28€/month</option>
+          </optgroup>
+        </select>
+        <label for="pro">Pro Plan</label>
+        <input id="pro" name="pro plan" type="checkbox"/>
+      </div>
+      <br/>
+      <div class="card-info">
+        <label for="card"> Credit card number</label>
+        <input id="card" name="credit card" type="text" />
+        <label for="cvc"> CVC</label>
+        <input id="cvc" name="cvc" type="text" />
+        <label for="exp-date"> Expiration date</label>
+        <input id="exp-date" name="exp" type="date" value="2023-05-05"/>
+        <label for="address"> Billing Address</label>
+        <input type="text" id="address" name="address"/>
+      </div>
+      <br/>
+      <button type="submit"> Submit</button>
+    </form>
+  </body>
+</html>
